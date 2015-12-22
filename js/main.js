@@ -1,42 +1,8 @@
 $(document).ready(function() {
-	var parent = $('.infinity');
+	var parent = $('.column');
 	var max = parent[0].scrollHeight - parent[0].offsetHeight - 20;
 
-	var height = $('body').height();
-
-	function debounce(fn, delay) {
-	  var timer = null;
-	  return function () {
-	    var context = this, args = arguments;
-	    clearTimeout(timer);
-	    timer = setTimeout(function () {
-	      fn.apply(context, args);
-	    }, delay);
-	  };
-	}
-
-function throttle(fn, threshhold, scope) {
-  threshhold || (threshhold = 250);
-  var last,
-      deferTimer;
-  return function () {
-    var context = scope || this;
-
-    var now = +new Date,
-        args = arguments;
-    if (last && now < last + threshhold) {
-      // hold on to it
-      clearTimeout(deferTimer);
-      deferTimer = setTimeout(function () {
-        last = now;
-        fn.apply(context, args);
-      }, threshhold);
-    } else {
-      last = now;
-      fn.apply(context, args);
-    }
-  };
-}
+	var parent_height = parent.height();
 
 	parent.on('scroll', function(event) {
 	    var s = $(this).scrollTop(),
@@ -49,7 +15,7 @@ function throttle(fn, threshhold, scope) {
 
 		$('.item').each(function(index, el) {
 			var $this = $(this);
-			var offset = $this.offset().top * 100 / height * 1; // 20 or 1
+			var offset = $this.offset().top * 100 / parent_height * 1; // 20 or 1
 			$this.css('background-position', '50% ' + offset + '%');
 		});
 
