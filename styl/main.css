@@ -14,29 +14,28 @@ body,
 .item {
   font-size: 48px;
   text-align: center;
-  height: 70px;
+  height: 60px;
   background-color: #fff;
   background-position: 50% 50%;
   background-repeat: repeat-y;
-  background-size: 80%;
+  background-size: 100%;
 }
 .column {
   overflow: scroll;
   float: left;
-  margin-right: 10px;
+  margin-right: 50px;
 }
 .one {
   width: 200px;
 }
 .one .item {
   background-image: url("../img/01.png");
-  transform: rotate(180deg);
 }
 .two {
   width: 175px;
 }
 .two .item {
-  background-image: url("../img/02.png");
+  background-image: url("../img/02_new.png");
   transform: rotate(180deg);
 }
 .three {

@@ -49,7 +49,7 @@ function throttle(fn, threshhold, scope) {
 
 		$('.item').each(function(index, el) {
 			var $this = $(this);
-			var offset = $this.offset().top * 100 / height * 40;
+			var offset = $this.offset().top * 100 / height * 1; // 20 or 1
 			$this.css('background-position', '50% ' + offset + '%');
 		});
 
