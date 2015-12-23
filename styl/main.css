@@ -1,9 +1,9 @@
 @-webkit-keyframes movecolumns {
   0% {
-    margin-top: 0%;
+    transform: translate(0, 0%);
   }
   100% {
-    margin-top: -100%;
+    transform: translate(0, -100%);
   }
 }
 body {
@@ -13,7 +13,7 @@ body {
 html,
 body,
 .column {
-  height: 800px;
+  height: 100%;
 }
 .item {
   height: 35px;
@@ -23,8 +23,8 @@ body,
   background-repeat: repeat-y;
   background-size: 100%;
 }
-.first {
-  animation: movecolumns 4s linear infinite;
+.item {
+  animation: movecolumns 2s linear infinite;
 }
 .column {
   overflow: hidden;
