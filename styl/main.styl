@@ -1,3 +1,13 @@
+@-webkit-keyframes movecolumns {
+	0% {margin-top: 100%;}
+	100% {margin-top: -100%;}
+}
+
+@-webkit-keyframes moveletter {
+	0% {background-position: 0% 0%;}
+	100% {background-position: 0% 100%;}
+}
+
 // ::-webkit-scrollbar
 // 	display none
 
@@ -9,41 +19,53 @@ html, body, .column
 	height 100%
 
 .item
-	font-size 48px
-	text-align center
 	height 35px
-	background-color white
-	background-position 50% 50%
-	background-repeat repeat-y
-	background-size 100%
+	background-color grey
+	position relative
+	.letter
+		width 100%
+		height 100%
+		position absolute
+		background-position 50% 50%
+		background-repeat repeat-y
+		background-size 100%
 
 .column
-	overflow scroll
+	overflow hidden
 	float left
 	margin-right 50px
 
+
+
+.first
+	animation movecolumns 4s linear infinite
+
+// .letter
+// 	animation moveletter 4s linear infinite
+
+
 .one
 	width 200px
-	.item
+	.letter
 		background-image url('../img/01.png')
 
 .two
 	width 175px
-	.item
+	.letter
 		background-image url('../img/02.png')
 		transform rotate(180deg)
 
 .three
 	width 170px
-	.item
+	.letter
 		background-image url('../img/03.png')
 
 .four
 	width 130px
-	.item
+	.letter
 		background-image url('../img/04.png')
 
 .five
 	width 270px
-	.item
+	.letter
 		background-image url('../img/05.png')

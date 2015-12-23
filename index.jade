@@ -8,17 +8,22 @@ html
 		script(type='text/javascript', src='js/main.js')
 	body
 		.column.one
-			each item in new Array(25)
-				.item
+			each item, i in new Array(25)
+				.item(class=(i == 0) ? 'first' : '')
+					.letter
 		.column.two
-			each item in new Array(25)
-				.item
+			each item, i in new Array(25)
+				.item(class=(i == 0) ? 'first' : '')
+					.letter
 		.column.three
-			each item in new Array(25)
-				.item
+			each item, i in new Array(25)
+				.item(class=(i == 0) ? 'first' : '')
+					.letter
 		.column.four
-			each item in new Array(25)
-				.item
+			each item, i in new Array(25)
+				.item(class=(i == 0) ? 'first' : '')
+					.letter
 		.column.five
-			each item in new Array(25)
-				.item
+			each item, i in new Array(25)
+				.item(class=(i == 0) ? 'first' : '')
+					.letter
