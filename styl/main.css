@@ -1,17 +1,9 @@
 @-webkit-keyframes movecolumns {
   0% {
-    margin-top: 100%;
+    margin-top: 0%;
   }
   100% {
     margin-top: -100%;
-  }
-}
-@-webkit-keyframes moveletter {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 0% 100%;
   }
 }
 body {
@@ -21,57 +13,52 @@ body {
 html,
 body,
 .column {
-  height: 100%;
+  height: 800px;
 }
 .item {
   height: 35px;
   background-color: #808080;
   position: relative;
-}
-.item .letter {
-  width: 100%;
-  height: 100%;
-  position: absolute;
   background-position: 50% 50%;
   background-repeat: repeat-y;
   background-size: 100%;
+}
+.first {
+  animation: movecolumns 4s linear infinite;
 }
 .column {
   overflow: hidden;
   float: left;
   margin-right: 50px;
 }
-.first {
-  animation: movecolumns 4s linear infinite;
-}
 .one {
   width: 200px;
 }
-.one .letter {
+.one .item {
   background-image: url("../img/01.png");
 }
 .two {
   width: 175px;
 }
-.two .letter {
+.two .item {
   background-image: url("../img/02.png");
   transform: rotate(180deg);
 }
 .three {
   width: 170px;
 }
-.three .letter {
+.three .item {
   background-image: url("../img/03.png");
 }
 .four {
   width: 130px;
 }
-.four .letter {
+.four .item {
   background-image: url("../img/04.png");
 }
 .five {
   width: 270px;
 }
-.five .letter {
+.five .item {
   background-image: url("../img/05.png");
 }
