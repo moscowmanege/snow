@@ -31,34 +31,37 @@ body,
   float: left;
   margin-right: 50px;
 }
+.column:last-child {
+  margin-right: 0px;
+}
 .one {
   width: 200px;
 }
 .one .item {
-  background-image: url("../img/01.png");
+  background-image: url("../img/old/01.png");
 }
 .two {
   width: 175px;
 }
 .two .item {
-  background-image: url("../img/02.png");
+  background-image: url("../img/old/02.png");
   transform: rotate(180deg);
 }
 .three {
   width: 170px;
 }
 .three .item {
-  background-image: url("../img/03.png");
+  background-image: url("../img/old/03.png");
 }
 .four {
   width: 130px;
 }
 .four .item {
-  background-image: url("../img/04.png");
+  background-image: url("../img/old/04.png");
 }
 .five {
   width: 270px;
 }
 .five .item {
-  background-image: url("../img/05.png");
+  background-image: url("../img/old/05.png");
 }
