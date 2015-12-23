@@ -11,9 +11,9 @@ $(document).ready(function() {
 	    if(s < 5) {l.prependTo(parent);parent.scrollTop(s + l.height()) }
 	}).scrollTop(5);
 
-	parent.on('scroll', function() {
+	parent.on('scroll', function(event) {
 
-		$('.item').each(function(index, el) {
+		$('.item').each(function() {
 			var $this = $(this);
 			var offset = $this.offset().top * 100 / parent_height * 1; // 20 or 1
 			$this.css('background-position', '50% ' + offset + '%');
@@ -21,8 +21,11 @@ $(document).ready(function() {
 
 	});
 
-	parent.on('scroll', function() {
-		position = parent.scrollTop();
-		parent.not(this).scrollTop(position);
+	parent.on('mouseover', function() {
+		var self = this;
+		parent.off('scroll.columns').filter(self).on('scroll.columns', function(event) {
+			position = $(this).scrollTop();
+			parent.not(self).scrollTop(position);
+		});
 	});
 });
