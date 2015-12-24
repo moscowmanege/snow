@@ -15,14 +15,14 @@ html,
 body,
 .container,
 .column {
-  height: 1080px;
+  height: 1920px;
 }
 .container {
   width: 6480px;
   outline: 1px solid #f00;
 }
 .item {
-  height: 45px;
+  height: 55px;
   background-color: #808080;
   position: relative;
   background-position: 50% 50%;
@@ -33,7 +33,7 @@ body,
   animation: movecolumns 2s linear infinite;
 }
 .column {
-  transform: scaleX(3);
+  transform: scaleX(2);
   transform-origin: 0 0;
   overflow: hidden;
   float: left;
@@ -43,35 +43,36 @@ body,
   margin-right: 0px;
 }
 .one {
-  margin-left: 1280px;
-  width: 200px;
+  margin-left: 900px;
+  width: 400px;
 }
 .one .item {
   background-image: url("../img/new/01.png");
 }
 .two {
-  width: 200px;
+  width: 320px;
+  margin-right: 560px;
 }
 .two .item {
   background-image: url("../img/new/02.png");
   transform: rotate(180deg);
 }
 .three {
-  width: 170px;
+  width: 320px;
   margin-right: 600px;
 }
 .three .item {
   background-image: url("../img/new/03.png");
 }
 .four {
-  width: 130px;
+  width: 260px;
   margin-right: 480px;
 }
 .four .item {
   background-image: url("../img/new/04.png");
 }
 .five {
-  width: 270px;
+  width: 640px;
 }
 .five .item {
   background-image: url("../img/new/05.png");
