@@ -6,6 +6,16 @@
     transform: translate(0, -100%);
   }
 }
+@-webkit-keyframes movenew {
+  0% {
+    margin-top: 80%;
+    background-position: 0 0;
+  }
+  100% {
+    margin-top: -80%;
+    background-position: 0 -200px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -17,8 +27,33 @@ body,
 .column {
   height: 1920px;
 }
+.new {
+  width: 600px;
+  height: 100%;
+  position: absolute;
+}
+.new.left {
+  left: 0;
+}
+.new.right {
+  right: 0;
+}
+.new .text {
+  animation: movenew 18s linear infinite;
+  width: 400px;
+  height: 60px;
+  margin-bottom: 50px;
+  background-image: url("../img/text.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+}
+.new .text:nth-child(2n) {
+  margin-left: 110px;
+}
 .container {
   width: 6480px;
+  position: relative;
 }
 .item {
   height: 75px;
@@ -42,7 +77,7 @@ body,
   margin-right: 0px;
 }
 .one {
-  margin-left: 700px;
+  margin-left: 630px;
   width: 460px;
 }
 .one .item {
