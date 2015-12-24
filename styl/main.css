@@ -9,14 +9,20 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #000;
 }
 html,
 body,
+.container,
 .column {
-  height: 100%;
+  height: 1080px;
+}
+.container {
+  width: 6480px;
+  outline: 1px solid #f00;
 }
 .item {
-  height: 35px;
+  height: 45px;
   background-color: #808080;
   position: relative;
   background-position: 50% 50%;
@@ -27,41 +33,46 @@ body,
   animation: movecolumns 2s linear infinite;
 }
 .column {
+  transform: scaleX(3);
+  transform-origin: 0 0;
   overflow: hidden;
   float: left;
-  margin-right: 50px;
+  margin-right: 650px;
 }
 .column:last-child {
   margin-right: 0px;
 }
 .one {
+  margin-left: 1280px;
   width: 200px;
 }
 .one .item {
-  background-image: url("../img/old/01.png");
+  background-image: url("../img/new/01.png");
 }
 .two {
-  width: 175px;
+  width: 200px;
 }
 .two .item {
-  background-image: url("../img/old/02.png");
+  background-image: url("../img/new/02.png");
   transform: rotate(180deg);
 }
 .three {
   width: 170px;
+  margin-right: 600px;
 }
 .three .item {
-  background-image: url("../img/old/03.png");
+  background-image: url("../img/new/03.png");
 }
 .four {
   width: 130px;
+  margin-right: 480px;
 }
 .four .item {
-  background-image: url("../img/old/04.png");
+  background-image: url("../img/new/04.png");
 }
 .five {
   width: 270px;
 }
 .five .item {
-  background-image: url("../img/old/05.png");
+  background-image: url("../img/new/05.png");
 }

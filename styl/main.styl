@@ -6,13 +6,17 @@
 body
 	margin 0
 	padding 0
-	// background-color black
+	background-color black
 
-html, body, .column
-	height 100%
+html, body, .container, .column
+	height 1080px
+
+.container
+	width 6480px
+	outline 1px solid red
 
 .item
-	height 35px
+	height 45px
 	background-color grey
 	position relative
 	background-position 50% 50%
@@ -23,34 +27,39 @@ html, body, .column
 	animation movecolumns 2s linear infinite
 
 .column
+	transform scaleX(3)
+	transform-origin: 0 0
 	overflow hidden
 	float left
-	margin-right 50px
+	margin-right 650px
 	&:last-child
 		margin-right 0px
 
 .one
+	margin-left 1280px
 	width 200px
 	.item
-		background-image url('../img/old/01.png')
+		background-image url('../img/new/01.png')
 
 .two
-	width 175px
+	width 200px
 	.item
-		background-image url('../img/old/02.png')
+		background-image url('../img/new/02.png')
 		transform rotate(180deg)
 
 .three
 	width 170px
+	margin-right 600px
 	.item
-		background-image url('../img/old/03.png')
+		background-image url('../img/new/03.png')
 
 .four
 	width 130px
+	margin-right 480px
 	.item
-		background-image url('../img/old/04.png')
+		background-image url('../img/new/04.png')
 
 .five
 	width 270px
 	.item
-		background-image url('../img/old/05.png')
+		background-image url('../img/new/05.png')
