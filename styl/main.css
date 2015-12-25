@@ -1,9 +1,9 @@
 @-webkit-keyframes movecolumns {
   0% {
-    transform: translate(0, 0%);
+    transform: translate3d(0, 0%, 0);
   }
   100% {
-    transform: translate(0, -100%);
+    transform: translate3d(0, -100%, 0);
   }
 }
 ::-webkit-scrollbar {
@@ -23,6 +23,7 @@ body,
 .container {
   width: 4638px;
   position: relative;
+  overflow: hidden;
 }
 .item {
   height: 75px;
@@ -38,7 +39,6 @@ body,
 .column {
   transform: scaleX(2);
   transform-origin: 0 0;
-  overflow: hidden;
   float: left;
 }
 .one {
