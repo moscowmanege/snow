@@ -27,8 +27,7 @@ body,
 }
 .item {
   height: 75px;
-  background-color: #808080;
-  position: relative;
+  background-color: #000;
   background-position: 50% 50%;
   background-repeat: repeat-y;
   background-size: 100%;

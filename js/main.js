@@ -1,6 +1,5 @@
 $(document).ready(function() {
-	var parent = $('.column');
-	var parent_height = parent.height();
+	var parent_height = $('.container').height();
 	var $items = $('.item');
 
 	function repeatOften() {
