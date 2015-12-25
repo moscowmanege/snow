@@ -40,12 +40,9 @@ body,
   transform-origin: 0 0;
   overflow: hidden;
   float: left;
-  margin-right: 650px;
-}
-.column:last-child {
-  margin-right: 0px;
 }
 .one {
+  margin-right: 610px;
   width: 400px;
 }
 .one .item {
@@ -53,7 +50,7 @@ body,
 }
 .two {
   width: 400px;
-  margin-right: 600px;
+  margin-right: 610px;
 }
 .two .item {
   background-image: url("../img/letters/02.png");
@@ -61,14 +58,14 @@ body,
 }
 .three {
   width: 320px;
-  margin-right: 570px;
+  margin-right: 580px;
 }
 .three .item {
   background-image: url("../img/letters/03.png");
 }
 .four {
   width: 230px;
-  margin-right: 410px;
+  margin-right: 420px;
 }
 .four .item {
   background-image: url("../img/letters/04.png");
