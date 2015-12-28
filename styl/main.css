@@ -53,7 +53,6 @@ body,
 }
 .two .item {
   background-image: url("../img/letters/02.png");
-  transform: rotate(180deg);
 }
 .three {
   width: 320px;
